@@ -1,4 +1,5 @@
-/*
+/*Messina, Franco Div H
+Ejercicio 6 E/S Datos
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
