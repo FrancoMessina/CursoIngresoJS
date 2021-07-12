@@ -1,14 +1,14 @@
 /* 
+Messina, Franco Div H
+Ejercicio 02 If
 Al ingresar una edad debemos informar solo si la persona es mayor de edad*/
 
 function mostrar() {
   //tomo la edad
-  let edad;
-  let idEdad = document.getElementById("txtIdEdad").value;
-  const mensaje = "Sos mayor de edad.";
-  edad = idEdad;
-  edad = parseInt(idEdad);
-  if (edad >= 18) {
-    document.getElementById("txtIdEdad").value = mensaje;
+  let edad; // EDAD INGRESADA POR EL USUARIO
+  edad = document.getElementById("txtIdEdad").value;
+  edad = parseInt(edad);
+  if (edad > 17) {
+    alert("Hola sos mayor de edad tenes " + edad + " años");
   }
 } //FIN DE LA FUNCIÓN
