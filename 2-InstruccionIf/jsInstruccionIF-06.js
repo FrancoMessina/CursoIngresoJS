@@ -10,7 +10,7 @@ function mostrar() {
   edad = parseInt(edad);
   if (edad > 17) {
     alert("Hola sos mayor de edad tenes" + edad + " años");
-  } else if (edad > 13 && edad < 18) {
+  } else if (edad > 12 && edad < 18) {
     alert("Hola sos adolescente tenes " + edad + " años");
   } else {
     alert("Hola sos un niño tenes " + edad + " años");
