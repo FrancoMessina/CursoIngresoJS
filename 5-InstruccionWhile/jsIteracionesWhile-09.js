@@ -1,21 +1,34 @@
 /*
+Messina, Franco Div H
+Ejercicio 09 While
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar()
 {	// declarar variables
-	var banderaDelPrimero;
-	var numeroIngresado;
-	var numeroMaximo;
-	var numeroMinimo;
-	var respuesta;
+	var bandera;//Variable par apoder ingresar por primra vez al minimo y maximo
+	var numeroIngresado;//Numero ingresado por el usuario
+	var numeroMaximo;//Numero máximo ingresado por el usuario
+	var numeroMinimo;//Numero minimo ingresado por el usuario
+	var seguir;//Variable para entrar al while y pedir lo solicitado en este caso numeros.
 	//iniciar variables
-	banderaDelPrimero="es el primero";
-	respuesta='si';
-	while(respuesta=="si")
+	bandera= true;
+	seguir = true;
+	
+	while(seguir == true)
 	{
-		
-		respuesta=prompt("desea continuar?");
+		numeroIngresado = prompt("Ingresa un numero: ");
+		numeroIngresado = parseInt(numeroIngresado);
+		if(numeroIngresado > numeroMaximo || bandera == true)
+		{
+			numeroMaximo = numeroIngresado;
+		}
+		if(numeroIngresado < numeroMinimo || bandera == true)
+		{
+			numeroMinimo = numeroIngresado;
+			bandera = false
+		}
+		seguir = confirm("desea ingresar otro numero?");
 	}
 	txtIdMaximo.value=numeroMaximo;
-	txtIdMinimmo.value=numeroMinimo;
+	txtIdMinimo.value=numeroMinimo;
 }//FIN DE LA FUNCIÓN

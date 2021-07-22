@@ -21,7 +21,6 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
     let impuesto; //Impuesto creado
     let descuentoRealizado;
     marca = document.getElementById("Marca").value;
-    precioFinal = document.getElementById("txtIdprecioDescuento").value;
     cantidadLampara = document.getElementById("txtIdCantidad").value;
     cantidadLampara = parseInt(cantidadLampara);
     precioLampara = 35;
@@ -83,7 +82,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 
     if(precioFinal > 120) 
     {
-        impuesto = (10 *primerPrecio) / 100;
+        impuesto = (10 *precioFinal / 100);
             
         precioFinal = precioFinal + impuesto;
         precioFinal = precioFinal.toFixed(2);
